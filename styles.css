@@ -60,7 +60,7 @@ fieldset .grupo{
 }
 
 .icono-cantidad  input {
-    padding-left: 30px; /* Añade espacio para el icono */
+    padding-left: 30px;
 }
 .grupo label {
     margin-bottom: 5px;
