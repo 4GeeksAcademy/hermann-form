@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario HTML5</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <form>
+        <div class="encabezado">
+            <h3>Payment form example</h3>
+        </div>
+        <div class="alerta" id="alerta">
+            <p>Some fields are missing</p>
+        </div>
+        <fieldset>
+            <div class="grupo">
+                <label for="card-number">Card *</label>
+                <input type="text" name="card-number" id="card-number" placeholder="XXXXXXXXX" required>
+            </div>
+            <div class="grupo">
+                <label for="cvc-number">CVC *</label>
+                <input type="text" name="cvc-number" id="cvc-number" placeholder="0000" required>
+            </div>
+            <div class="grupo">
+                <label for="cantidad">Amount</label>
+                <input type="text" name="cantidad" id="cantidad">
+            </div>
+        </fieldset>
+        <fieldset>
+            <div class="grupo">
+                <label for="first-name">First Name *</label>
+                <input type="text" name="first-name" id="first-name" required>
+            </div>
+            <div class="grupo">
+                <label for="last-name">Last Name</label>
+                <input type="text" name="last-name" id="last-name">
+            </div>
+        </fieldset>
+        <fieldset>
+            <div class="grupo">
+                <label for="city">City</label>
+                <input type="text" name="city" id="city">
+            </div>
+            <div class="grupo">
+                <label for="state">State</label>
+                <select name="state" id="state">
+                    <option value="Barcelona">Barcelona</option>
+                    <option value="Madrid">Madrid</option>
+                    <option value="Valencia">Valencia</option>
+                </select>
+            </div>
+            <div class="grupo">
+                <label for="postal">Postal Code *</label>
+                <input type="text" name="postal" id="postal" required>
+            </div>
+        </fieldset>
+        <fieldset>
+            <div class="iconos">
+                <div class="banco">
+                    <label for="accept"><i class="fab fa-cc-visa"></i></label>
+                    <input type="radio" name="Visa" value="Visa">
+                </div>
+                <div class="banco">
+                    <label for="accept"><i class="fab fa-cc-mastercard"></i></label>
+                    <input type="radio" name="MasterCard" value="MasterCard">
+                </div>
+                <div class="banco">
+                    <label for="accept"><i class="fab fa-cc-paypal"></i></label>
+                    <input type="radio" name="PayPal" value="PayPal">
+                </div>
+            </div>
+            <div class="grupo">
+                <label for="mensaje">Message</label>
+                <textarea name="mensaje" id="mensaje"></textarea>
+            </div>
+        </fieldset>
+        <div class="actions">
+            <button type="button" class="cancelar">Cancel</button>
+            <button type="submit" class="enviar">Send</button>
+        </div>
+    </form>
+</body>
+</html>
