@@ -47,6 +47,21 @@ fieldset .grupo{
     width: 100%;
     margin: 0 10px;
 }
+.icono-cantidad {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icono-cantidad  i {
+    margin-right: 5px;
+    color: #999;
+}
+
+.icono-cantidad  input {
+    padding-left: 30px; /* Añade espacio para el icono */
+}
 .grupo label {
     margin-bottom: 5px;
     text-align: left;
@@ -68,15 +83,21 @@ fieldset .grupo{
     padding: 15px;
     margin: 0;
 }
-
+.metodos{
+    width: 100%;
+}
 .iconos .banco {
     display: flex;
     align-items: center; 
 }
 
 .iconos .banco i {
-    margin-right: 10px;
     font-size: 25px;
+}
+.grupo span{
+    margin-top: 5px;
+    font-size: 0.8em;
+    color: #a9a9a9;
 }
 button {
     padding: 10px 15px;

@@ -18,35 +18,38 @@
         <fieldset>
             <div class="grupo">
                 <label for="card-number">Card *</label>
-                <input type="text" name="card-number" id="card-number" placeholder="XXXXXXXXX" required>
+                <input type="text" name="card-number" placeholder="XXXXXXXXX" required>
             </div>
             <div class="grupo">
                 <label for="cvc-number">CVC *</label>
-                <input type="text" name="cvc-number" id="cvc-number" placeholder="0000" required>
+                <input type="text" name="cvc-number" placeholder="0000" required>
             </div>
             <div class="grupo">
-                <label for="cantidad">Amount</label>
-                <input type="text" name="cantidad" id="cantidad">
+                <label for="amount">Amount</label>
+                <div class="icono-cantidad">
+                    <i class="fas fa-dollar-sign"></i>
+                    <input type="text" name="amount">
+                </div>
             </div>
         </fieldset>
         <fieldset>
             <div class="grupo">
                 <label for="first-name">First Name *</label>
-                <input type="text" name="first-name" id="first-name" required>
+                <input type="text" name="first-name" required>
             </div>
             <div class="grupo">
                 <label for="last-name">Last Name</label>
-                <input type="text" name="last-name" id="last-name">
+                <input type="text" name="last-name">
             </div>
         </fieldset>
         <fieldset>
             <div class="grupo">
                 <label for="city">City</label>
-                <input type="text" name="city" id="city">
+                <input type="text" name="city">
             </div>
             <div class="grupo">
                 <label for="state">State</label>
-                <select name="state" id="state">
+                <select name="state">
                     <option value="Barcelona">Barcelona</option>
                     <option value="Madrid">Madrid</option>
                     <option value="Valencia">Valencia</option>
@@ -54,27 +57,31 @@
             </div>
             <div class="grupo">
                 <label for="postal">Postal Code *</label>
-                <input type="text" name="postal" id="postal" required>
+                <input type="text" name="postal" required>
             </div>
         </fieldset>
         <fieldset>
-            <div class="iconos">
-                <div class="banco">
-                    <label for="accept"><i class="fab fa-cc-visa"></i></label>
-                    <input type="radio" name="Visa" value="Visa">
-                </div>
-                <div class="banco">
-                    <label for="accept"><i class="fab fa-cc-mastercard"></i></label>
-                    <input type="radio" name="MasterCard" value="MasterCard">
-                </div>
-                <div class="banco">
-                    <label for="accept"><i class="fab fa-cc-paypal"></i></label>
-                    <input type="radio" name="PayPal" value="PayPal">
+            <div class=" grupo metodos">
+                <label for="metodos">We accept:</label>
+                <div class="iconos">
+                    <div class="banco">
+                        <label for="accept"><i class="fab fa-cc-visa"></i></label>
+                        <input type="radio" name="Visa" value="Visa">
+                    </div>
+                    <div class="banco">
+                        <label for="accept"><i class="fab fa-cc-mastercard"></i></label>
+                        <input type="radio" name="MasterCard" value="MasterCard">
+                    </div>
+                    <div class="banco">
+                        <label for="accept"><i class="fab fa-cc-paypal"></i></label>
+                        <input type="radio" name="PayPal" value="PayPal">
+                    </div>
                 </div>
             </div>
             <div class="grupo">
                 <label for="mensaje">Message</label>
                 <textarea name="mensaje" id="mensaje"></textarea>
+                <span>Add any notes here.</span>
             </div>
         </fieldset>
         <div class="actions">
